@@ -15,7 +15,7 @@ export default function Layout() {
     };
 
     fetchData();
-  }, []);
+  }, [loc.pathname]);
 
   return (
     <>
