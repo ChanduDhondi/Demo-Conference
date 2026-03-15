@@ -16,7 +16,12 @@ export default function Dashboard() {
     load();
   }, []);
 
-  if (!formData) return <p>Loading...</p>;
+  if (!formData)
+    return (
+      <p className="text-green-400 flex justify-center items-center text-4xl">
+        Loading...
+      </p>
+    );
 
   const handleChange = (section, field, value) => {
     setFormData({
