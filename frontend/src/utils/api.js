@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // const url = "http://localhost:8080/api";
-const url = "https://demo-conference-w6nc.onrender.com";
+const url = "https://demo-conference-w6nc.onrender.com/api";
 
 export const getData = async () => {
   const res = await axios.get(`${url}/home`);
