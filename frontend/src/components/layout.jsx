@@ -3,7 +3,7 @@ import { Outlet, useLocation } from "react-router";
 import { getData } from "../utils/api";
 
 export default function Layout() {
-  const paths = ["/admin"];
+  const paths = ["/admin", "/admin/dashboard"];
   const loc = useLocation();
 
   const [data, setData] = useState();
